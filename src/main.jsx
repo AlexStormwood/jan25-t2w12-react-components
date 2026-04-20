@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './styles/index.css'
 import App from './components/App.jsx'
 import FavouritePokemonList from './components/FavouritePokemonList.jsx'
+import PageLayout from './components/_PageLayout.jsx'
 
 // Find an element on the current webpage that we can latch on to
 // let reactRootElement = document.getElementById("root");
@@ -19,7 +20,14 @@ import FavouritePokemonList from './components/FavouritePokemonList.jsx'
 createRoot(document.getElementById('root')).render(
   // React app starts now!!!
   <StrictMode>
-    <FavouritePokemonList />
-    <App />
+
+    <PageLayout>
+      
+      <FavouritePokemonList />
+
+    </PageLayout>
+
+    {/* <FavouritePokemonList />
+    <App /> */}
   </StrictMode>,
 )
