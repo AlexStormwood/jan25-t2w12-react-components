@@ -1,3 +1,4 @@
+import PokemonNameCard from "./PokemonNameCard";
 
 
 let pokemonNames = [
@@ -16,7 +17,8 @@ export default function FavouritePokemonList(){
 			{/* array.map is for creating a new array based on iterating over another array */}
 			{/* so we make an array of h2 elements based on pokemonNames! */}
 			{pokemonNames.map((name, index) => {
-				return <h2 key={`${name}-${index}`} >{name}</h2>
+				// return <h2 key={`${name}-${index}`} >{name}</h2>
+				return <PokemonNameCard pokemonName={name} key={`${name}-${index}`} />
 			})}
 		</div>
 	)
