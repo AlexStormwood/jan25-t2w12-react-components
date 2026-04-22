@@ -5,6 +5,7 @@ import App from './components/App.jsx'
 import FavouritePokemonList from './components/FavouritePokemonList.jsx'
 import PageLayout from './components/_PageLayout.jsx'
 import ButtonCounter from './components/ButtonCounter.jsx'
+import RandomPokemonCard from './components/RandomPokemonCard.jsx'
 
 // Find an element on the current webpage that we can latch on to
 // let reactRootElement = document.getElementById("root");
@@ -23,6 +24,14 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
 
     <PageLayout>
+
+      <RandomPokemonCard />
+      <RandomPokemonCard />
+      <RandomPokemonCard />
+      <RandomPokemonCard />
+      <RandomPokemonCard />
+      <RandomPokemonCard />
+      
 
       <ButtonCounter />
       
