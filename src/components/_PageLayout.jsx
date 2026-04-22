@@ -1,5 +1,7 @@
 
 
+// this.props.children <- class component way to access children
+
 export default function PageLayout({children}){
 
 	// eslint-disable-next-line react-hooks/purity

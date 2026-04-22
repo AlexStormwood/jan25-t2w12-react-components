@@ -1,4 +1,4 @@
-import PokemonNameCard from "./PokemonNameCard";
+import PokemonNameCard from "./PokemonNameCard-Class";
 
 
 let pokemonNames = [
