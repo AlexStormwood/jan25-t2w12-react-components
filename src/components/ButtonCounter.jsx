@@ -29,6 +29,14 @@ export default class ButtonCounter extends React.Component {
 		console.log("counter go up!!!")
 	}
 
+
+	componentDidMount(){
+		// This function runs automatically when  React first loads this component
+		console.log("Button Counter has rendered for the first time!")
+	}
+
+
+
 	render(){
 		// Render the button!!!!
 		return(
