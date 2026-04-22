@@ -31,8 +31,23 @@ export default class ButtonCounter extends React.Component {
 
 
 	componentDidMount(){
-		// This function runs automatically when  React first loads this component
+		// This function runs once automatically when React first loads this component
 		console.log("Button Counter has rendered for the first time!")
+	}
+
+	componentWillUnmount(){
+		// The component is about to be deleted from the page
+		console.log("The button counter is being removed from the page");
+
+		alert("Are you sure you want to go?");
+
+		// Example function we could call in componentWillUnMount
+		// e.g. if the game is changing levels or menus, we want to autosave
+		// autosave()
+	}
+
+	componentDidUpdate(){
+		console.log("Button Counter value is " + this.state.counter);
 	}
 
 
